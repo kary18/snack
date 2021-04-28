@@ -26,7 +26,7 @@ window.onload = function()
 		var canvas = document.createElement('canvas');
 		canvas.width = canvasWidth;
 		canvas.height = canvasHeight;
-		canvas.style.border = "30px solid #1b4235";
+		canvas.style.border = "20px solid #039dfc";
 		document.body.appendChild(canvas);
 		ctx = canvas.getContext('2d');
 		kaa = new Snake([[6,4],[5,4],[4,4],[3,4],[2,4]], "right");
@@ -102,7 +102,7 @@ window.onload = function()
 		{
 			ctx.save();
 			ctx.font = "bold 200px sans-serif";
-			ctx.fillStyle = "#1b4235";
+			ctx.fillStyle = "#039dfc";
 			ctx.textAlign = "center";
 			ctx.textBaseline = "middle";
 			var centerX = canvasWidth / 2;
@@ -317,6 +317,34 @@ window.onload = function()
 
 	}
 }
-
+/*animation body
+const colors = [
+	'#711c91',
+	'#ea00d9',
+	'#0abdc6',
+	'#133e7c'
+  ];
+  
+  createSquare = () => {
+	const section = document.querySelector('section');
+	const square = document.createElement('span');
+	
+	const size = Math.random() * 50;
+	
+	square.style.width = 20 + size + 'px';
+	square.style.height = 20 + size + 'px';
+	
+	square.style.top = Math.random() * innerHeight + 'px';
+	square.style.left = Math.random() * innerWidth + 'px';
+	
+	square.style.background = colors[Math.floor(Math.random() * colors.length)];
+	section.appendChild(square);
+	
+	setTimeout(() => {
+	  square.remove()
+	}, 5000);
+  }
+  
+  setInterval(createSquare, 150);*/
 
 	

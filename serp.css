@@ -1,14 +1,61 @@
 canvas{
-	background-image: url(serp.jpeg);
-	background-repeat: no-repeat;
 	margin: 50px auto;
 	display: block;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  min-height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 audio{
 	 width : 300px;
+}
+
+/*animation body*/
+/* 
+body {
+  overflow: hidden;
+  height: 100vh;
+  background: #091833;
+} 
+
+section {
+  height: 100vh;
+} 
+
+span {
+  position: absolute;
+  pointer-events: none;
+  background: #fff;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateY(-500%) rotate(360deg);
+    opacity: 0;
+  }
+}
 	 
-}
-body{
-	background: lightgray;
-	
-}
+	  */
